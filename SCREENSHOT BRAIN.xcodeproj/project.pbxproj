@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		6D806139303435E900215E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D689EE5303321060093448C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D689EEC303321060093448C;
+			remoteInfo = "SCREENSHOT BRAIN";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6D689EED303321060093448C /* SCREENSHOT BRAIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCREENSHOT BRAIN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D806135303435E900215E91 /* SCREENSHOT BRAINTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SCREENSHOT BRAINTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = "SCREENSHOT BRAIN";
 			sourceTree = "<group>";
 		};
+		6D806136303435E900215E91 /* SCREENSHOT BRAINTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SCREENSHOT BRAINTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6D689EEA303321060093448C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D806132303435E900215E91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				6D689EEF303321060093448C /* SCREENSHOT BRAIN */,
+				6D806136303435E900215E91 /* SCREENSHOT BRAINTests */,
 				6D689EEE303321060093448C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				6D689EED303321060093448C /* SCREENSHOT BRAIN.app */,
+				6D806135303435E900215E91 /* SCREENSHOT BRAINTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 6D689EED303321060093448C /* SCREENSHOT BRAIN.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6D806134303435E900215E91 /* SCREENSHOT BRAINTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D80613B303435E900215E91 /* Build configuration list for PBXNativeTarget "SCREENSHOT BRAINTests" */;
+			buildPhases = (
+				6D806131303435E900215E91 /* Sources */,
+				6D806132303435E900215E91 /* Frameworks */,
+				6D806133303435E900215E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D80613A303435E900215E91 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D806136303435E900215E91 /* SCREENSHOT BRAINTests */,
+			);
+			name = "SCREENSHOT BRAINTests";
+			packageProductDependencies = (
+			);
+			productName = "SCREENSHOT BRAINTests";
+			productReference = 6D806135303435E900215E91 /* SCREENSHOT BRAINTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					6D689EEC303321060093448C = {
 						CreatedOnToolsVersion = 26.6;
+					};
+					6D806134303435E900215E91 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 6D689EEC303321060093448C;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				6D689EEC303321060093448C /* SCREENSHOT BRAIN */,
+				6D806134303435E900215E91 /* SCREENSHOT BRAINTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D689EEB303321060093448C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D806133303435E900215E91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D806131303435E900215E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D80613A303435E900215E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D689EEC303321060093448C /* SCREENSHOT BRAIN */;
+			targetProxy = 6D806139303435E900215E91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6D689EF6303321070093448C /* Debug */ = {
@@ -256,6 +331,7 @@
 				DEVELOPMENT_TEAM = ANQLE8XP6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Screenshot Brain needs access to your photos to find and organize your screenshots.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +364,7 @@
 				DEVELOPMENT_TEAM = ANQLE8XP6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Screenshot Brain needs access to your photos to find and organize your screenshots.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +387,48 @@
 			};
 			name = Release;
 		};
+		6D80613C303435E900215E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANQLE8XP6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.com.SCREENSHOT-BRAINTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCREENSHOT BRAIN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SCREENSHOT BRAIN";
+			};
+			name = Debug;
+		};
+		6D80613D303435E900215E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ANQLE8XP6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.com.SCREENSHOT-BRAINTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCREENSHOT BRAIN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SCREENSHOT BRAIN";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +446,15 @@
 			buildConfigurations = (
 				6D689EF9303321070093448C /* Debug */,
 				6D689EFA303321070093448C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D80613B303435E900215E91 /* Build configuration list for PBXNativeTarget "SCREENSHOT BRAINTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D80613C303435E900215E91 /* Debug */,
+				6D80613D303435E900215E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
